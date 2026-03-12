@@ -6,7 +6,9 @@
     --css-color: #264DE4;
     --html-glow: rgba(227, 79, 38, 0.4);
     --css-glow: rgba(38, 77, 228, 0.4);
+    --webdev-glow: rgba(99, 102, 241, 0.4);
     --card-bg: rgba(255, 255, 255, 0.03);
+    --webdev-color: #6366f1;
     /* --card-border: rgba(255, 255, 255, 0.08); */
 }
 
@@ -64,6 +66,15 @@ body {
     height: 500px;
     background: var(--css-glow);
     animation-delay: -5s;
+}
+
+.shape-3 {
+    top: 50%;
+    left: 45%;
+    width: 450px;
+    height: 450px;
+    background: var(--webdev-glow);
+    animation-delay: -3s;
 }
 
 @keyframes float {
@@ -150,6 +161,11 @@ body {
     border-color: rgba(38, 77, 228, 0.3);
 }
 
+.webdev-card:hover {
+    box-shadow: 0 20px 40px var(--webdev-glow);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
 .card-icon {
     width: 60px;
     height: 60px;
@@ -171,6 +187,11 @@ body {
 .css-card .card-icon {
     background: linear-gradient(135deg, #264DE4, #2965f1);
     box-shadow: 0 10px 20px rgba(38, 77, 228, 0.3);
+}
+
+.webdev-card .card-icon {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
 
 .card h2 {
@@ -234,6 +255,10 @@ body {
     color: var(--css-color);
 }
 
+.webdev-card .feature-list li::before {
+    color: var(--webdev-color);
+}
+
 .footer {
     text-align: center;
     margin-top: 80px;
@@ -250,6 +275,11 @@ body {
 
 .highlight-css {
     color: var(--css-color);
+    font-weight: 600;
+}
+
+.highlight-webdev {
+    color: var(--webdev-color);
     font-weight: 600;
 }
 
